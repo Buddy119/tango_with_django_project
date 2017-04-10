@@ -52,8 +52,8 @@ LOGIN_URL = '/accounts/login/'  # The page users are directed to if they are not
                                                                 # and are trying to access pages requiring authentication
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.security.SecurityMiddleware',    
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
